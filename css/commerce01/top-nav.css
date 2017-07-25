@@ -1,0 +1,46 @@
+header .cart-container {
+    float: right;
+}
+
+button.btn-cart {
+    background: transparent;
+    border: none;
+}
+
+.login-container {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.login-container > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.login-container ul > li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.login-container ul li a {
+    padding: 0 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.promotion-container {
+    float: left;
+    width: 47%;
+}
+
+.promotion-container p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.promotion-container a {
+    text-decoration: none;
+    font-weight: 700;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NavTemplates</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/waves.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+	html, body{
+	    position: relative;
+	    height: 100%;
+	    background: #fff;
+	}
+
+	body{
+		font-family: Poppins,sans-serif;
+		font-weight: 300;
+	}
+
+    .dark-theme {
+        background: #4F5467;
+    }
+
+	.navbar-header{
+		width:100%;
+		border:0;
+	}
+
+    .side-nav-head{
+        border: 0;
+    }
+
+    nav .side-nav-head {
+        width: 220px;
+        background: #fff;
+        float: left;
+    }
+
+	.hidden-xs .light-logo{
+		margin-left:-6px;
+	}
+
+    .light-logo{
+    	display: inline-block;
+    }
+
+    .logo{
+	    color: #fff;
+	    font-size: 22px;
+	    padding-left: 0;
+	    text-transform: uppercase;
+    }
+
+    .navbar-header,.navbar-default{
+    	border:0;
+    	margin:0;
+    }
+
+    .nav{
+    	list-style: none;
+    	display: -webkit-box;
+    	display: -webkit-flex;
+    	display: -ms-flexbox;
+    	display: flex;
+    }
+
+    .navbar-links>li {
+	    float: left;
+	}
+	
+	.nav > li {
+	    position: relative;
+	    display: block;
+	}
+
+	.navbar-links > li > a {
+	    color: #ffffff;
+	}
+
+	.navbar-links>li>a {
+	    color: #fff;
+	    padding: 0 14px;
+	    line-height: 40px;
+	    min-height: 40px;
+	}
+	
+	.nav > li > a {
+	    position: relative;
+	    display: block;
+	    padding: 10px 15px;
+	    background: none;
+	}
+
+	.navbar-links>li>a:hover,.navbar-links>li>a:active {
+	    background: rgba(0,0,0,.1) !important;
+	}
+
+	.nav>li>a:hover, .nav>li>a:focus {
+	    background-color: transparent;
+	}
+
+	.navbar-search{
+    	position: relative;
+    	margin: 0;
+	}
+
+	.navbar-search a {
+	    position: absolute;
+	    top: 20px;
+	    right: 10px;
+	    color: #4c5667;
+	}
+
+	.navbar-search .form-control, .navbar-search .form-control:focus {
+	    border: none;
+	    font-size: 13px;
+	    color: #4c5667;
+	    padding-left: 20px;
+	    padding-right: 40px;
+	    background: rgba(255,255,255,.9);
+	    box-shadow: none;
+	    height: 30px;
+	    font-weight: 600;
+	    width: 180px;
+	    display: inline-block;
+	    line-height: 30px;
+	    margin-top: 15px;
+	    border-radius: 40px;
+	    transition: .5s ease-out;
+	}
+
+	.sidebar{
+		top:0;
+		position: absolute;
+		width: 220px;
+		padding-top: 60px;
+		min-height: 100%;
+		background: #fff;
+    	box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    	overflow: visible;
+	}
+
+	.sidebar-nav{
+	    position: relative;
+	    overflow: visible;
+	    width: auto;
+	    height: 100%;
+	}
+
+	.user-profile{
+	    padding: 15px 0;
+	    position: relative;
+	    text-align: center;
+	}
+
+	.user-profile a{
+		color: #54667a;
+		text-decoration: none;
+	}
+
+	.sidebar-nav img.img-circle{
+		width: 50px;
+		display: block;
+   		margin: 0 auto 10px;
+	}
+
+	.user-profile .dropdown-menu{
+		position: absolute;
+		right:0;
+		left:0;
+		width:180px;
+		margin:auto;
+	}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header dark-theme">
+                <div class="side-nav-head">
+                    <a class="logo" href="#">
+						<img src="img/eliteadmin-logo-dark.png" alt="" class="light-logo">
+						<span class="hidden-xs">
+							<img src="img/eliteadmin-text-dark.png" alt="home" class="light-logo">
+						</span>
+					</a>
+                </div>
+                <ul class="nav navbar-left navbar-links hidden-xs active">
+                    <li>
+                    	<a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light">
+                    		<i class="fa fa-arrow-circle-o-left"></i>
+                    	</a>
+                    </li>
+                    <li>
+                        <form role="search" class="navbar-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href="" class="active"><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="navbar-default sidebar">
+        	<div class="sidebar-nav">
+        		<div class="user-profile">
+        			<img src="http://eliteadmin.themedesigner.in/demos/plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
+        			<a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave Gection <span class="caret"></span></a>
+        			<ul class="dropdown-menu animated flipInY">
+                        <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                        <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                        <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                    </ul>
+        		</div>
+
+        	</div>
+        </div>
+    </header>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/waves.min.js"></script>
+    <script>
+    	var config = {
+		    // How long Waves effect duration 
+		    // when it's clicked (in milliseconds)
+		    duration: 500,
+
+		    // Delay showing Waves effect on touch
+		    // and hide the effect if user scrolls
+		    // (0 to disable delay) (in milliseconds)
+		    delay: 200
+		};
+		                
+		// Initialise Waves with the config
+		Waves.init(config);
+    </script>
+</body>
+
+</html>

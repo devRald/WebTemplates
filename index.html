@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NavTemplates</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/commerce01/top-nav.css" />
+    <style>
+    /* colors */
+    .bg-dark-theme {
+        background: #333333;
+    }
+
+    .nav-bg-orage-theme{
+    	background: #fe9126;
+    	border:none;
+    	border-radius: 0%;
+    }
+    
+    .text-white {
+        color: #fff;
+    }
+    
+    .text-orange {
+        color: #fe9126;
+    }
+    /* padding */
+    
+    .padding-med-nav {
+        padding: 12px 0;
+    }
+    
+    .padding-med-nav-items {
+        padding: 9px 0;
+    }
+    
+    .padding-lg-nav {
+        padding: 2em;
+    }
+
+    /* nav */
+    .navbar-nav > li > a {
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	    font-size: 16px;
+    	font-weight: 500;
+    	color: #fff !important;
+	}
+
+	.navbar-nav > li > a:hover {
+	    background: transparent;
+	    color:#fff;
+	}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-nav padding-med-nav bg-dark-theme">
+            <div class="container">
+                <div class="promotion-container padding-med-nav-items">
+                    <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a class="text-orange" href="#">SHOP NOW</a></p>
+                </div>
+                <div class="login-container padding-med-nav-items">
+                    <ul>
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="cart-container padding-med-nav-items">
+                    <button class="btn-cart">
+                        <span class="fa fa-shopping-cart fa-lg text-white"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default nav-bg-orage-theme">
+            <div class="container">
+            	<div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			    </div>
+            	<div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li ><a href="#">Home</a></li>
+	                    <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Groceries</a>
+	                        <ul class="dropdown-menu multi-column columns-3">
+	                            <div class="row">
+	                                <div class="multi-gd-img">
+	                                    <ul class="multi-column-dropdown">
+	                                        <h6>All Groceries</h6>
+	                                        <li><a href="groceries.html">Dals &amp; Pulses</a></li>
+	                                        <li><a href="groceries.html">Almonds</a></li>
+	                                        <li><a href="groceries.html">Cashews</a></li>
+	                                        <li><a href="groceries.html">Dry Fruit</a></li>
+	                                        <li><a href="groceries.html"> Mukhwas </a></li>
+	                                        <li><a href="groceries.html">Rice &amp; Rice Products</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </ul>
+	                    </li>
+	                    <li class="dropdown"><a href="#">Household</a></li>
+	                    <li class="dropdown"><a href="#">Personal Care</a></li>
+	                    <li class="dropdown"><a href="#">Packaged Foods</a></li>
+	                    <li class="dropdown"><a href="#">Beverages</a></li>
+	                    <li><a href="#">Gourmet</a></li>
+	                    <li><a href="#">Offers</a></li>
+	                    <li><a href="#">Contact</a></li>
+	                </ul>
+	            </div>
+            </div>
+        </nav>
+    </header>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
